@@ -1,0 +1,584 @@
+html, body { 
+  /* position:relative; */
+  margin: 0;
+  padding: 0;
+  font-size: 1.5vw;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+
+}
+html{
+
+  height: 100%;
+}
+body{
+
+  min-height: 100%;
+}
+
+#uwu {
+  height: 10%;
+  width: 100%;
+
+}
+
+/* Define the animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    margin-left: 10vw;
+  }
+  to {
+    opacity: 0.9;
+    margin-left: 1vw;
+  }
+}
+  
+#menue {
+  position:fixed;
+  z-index: 10;
+  font-family: 'Raleway', sans-serif;
+  height: 4.5vw;
+  width: 100%;
+  padding: 0.5vw;
+  background: #ffffff;
+/*   border: 1vw ridge rgba(255, 255, 255, .6); */
+  border-style: solid;
+  border-width: 0.2vw;
+/*   margin: 0; */
+  
+}
+#game {
+  margin-top: 9vw;
+  font-family: 'Raleway', sans-serif;
+  width: 90%;
+  float: left;
+}
+/* ID Setup, for the main containers */
+
+#up {
+  position: absolute;
+  overflow-wrap: anywhere;
+  top: calc(7vh + 2vw);
+  right: 0;
+  width: 20%;
+  height: calc(100% - calc(7vh + 2vw));
+  /* background-image: url('img/CoinPixel.gif'); */
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: contain;
+  z-index: -1;
+  font-size: 0.91vw;
+
+}
+
+
+#automations {
+  background: #ffffff;
+  width: 65%;
+  height: 100%;
+  display: flex;
+}
+#new {
+  margin-top: 1vw;
+  margin-bottom: 5vw;
+  background: #ffffff;
+  text-align: center;
+  font-size: 2vw;
+  padding: 2vw;
+  width: 30%;
+  transition-duration: 0.1s;
+  border: 1vw ridge rgba(255, 255, 255, .6);
+}
+/* These are the individual elements that contain the stuff  */
+.machine {
+  margin-left: 2vw;
+  z-index: 1;
+  font-family: 'Raleway', sans-serif;
+  float: left;
+  padding-left: 0vw;
+  width: 25%;
+  height: 15vw;
+  /* height: 15vw; */
+/*   background: #ffffff; */
+  position: relative;
+  transition-duration: 0.5s;
+}
+/* .bar {
+  transition-duration: 0.2s;
+  background-image: url('img/box.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: 1;
+  font-family: 'Raleway', sans-serif;
+  float: left;
+  padding-left: 0vw;
+  bottom: 0.1vw;
+  width: 23%;
+  height: 2vw;
+  border: 0.5vw ridge rgba(255, 255, 255, .6);
+  position: absolute;
+} */
+.bhorModel {
+  
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  left: 0%;
+  top: 60%;
+/*   margin-top: 7%; */
+  /* margin-left: 10vw; */
+  transform-style: preserve-3d;
+    animation-name:            rotate; 
+    animation-duration:        1s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.student {
+  font-family: 'Raleway', sans-serif;
+  padding: 0vw;
+  float: left;
+  width: 25%;
+  height: 14vw;
+  margin-right: 1vw;
+}
+.options {
+  margin-left: 3vw;
+  font-family: 'Raleway', sans-serif;
+  padding: 0vw;
+  float: left;
+  width: 15%;
+  height: 14vw;
+}
+.clickr {
+  
+  font-family: 'Raleway', sans-serif;
+  width: 15%;
+  height: 15vw;
+  background: #ffffff;
+  transition-duration: 0.3s;
+} 
+
+.clickr button {
+  width: 100%;
+  height: 100%; 
+  transition-duration: 0.3s;
+}
+/* .clickr:active  { */
+  /* width: 15%;
+  height: 16vw; */
+/* } */
+/* .clickr button:hover {
+  width: 100%;
+  height: 100%
+} */
+
+button {
+  text-align: center;
+/*   border-color: gray; */
+  border: 2vw ridge rgba(255, 255, 255, .6);
+/*   border-radius: 5vw; */
+  border-width: 0.6vw;
+}
+button:hover {
+  /* animation-name: fade-in; */
+/*   animation-duration: 0.1s; */
+  /* background: #ebebeb; */
+  cursor: pointer;
+}
+.group {
+  position: relative;
+  margin-top: 1vw;
+
+  animation-name: fade-in;
+  margin-left: 1vw;
+  animation-duration: 0.8s;
+  border-style: dot-dash;
+  width: 90%;
+  height: 18vw;
+
+  display: flex;
+  /* background-image: url("img/Science1.png"); */
+  /* height: 100%; */
+  /* background-position: right; /* Right position for the image */
+  /* background-repeat: no-repeat; /* Do not repeat the image  */
+  /* background-size: 45% 100%; /* Resize the background image */ 
+  /* background-repeat: no-repeat, repeat;  */
+}
+
+img {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+#reset {
+  height: 100%;
+  /* text-align: center; */
+  
+  float: left;
+  margin-left: 3vw;
+  
+  width: 20%;  
+}
+.red {
+  background: #ff2424;
+}
+#grams {
+  text-align: center;
+  padding: 0;
+  
+}
+.btn {
+  /* margin-left: 1vw; */
+  /* margin-right: 1vw; */
+  padding: 1vw;
+  background-color: #ffffff;  
+  border-radius: 8px; 
+  border-width: 0.5vw;
+  transition-duration: 2s;
+  border-color: #b5e3e8; 
+/*   border-style: none; */
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+#gramsButton {
+  /* border: 1vw ridge rgba(255, 255, 255, .6);
+  /* font-size: 2vw; */
+  height: 100%;
+  
+  float: right;
+  margin-right: 3vw;
+  
+  width: 20%; 
+}
+#coinButton {
+  /* border: 1vw ridge rgba(255, 255, 255, 0.6);
+  /* font-size: 2vw; */
+  height: 100%;
+  width: 20%;
+  float: right;
+  margin-right: 3vw; 
+} 
+#prestige {
+  height: 100%;
+  visibility: hidden;
+  /* border: 1vw ridge rgba(255, 255, 255, 0.6);
+  /* font-size: 2vw; */
+  /* height: 100%;
+  width: 20%; */
+  float: right;
+  margin-right: 3vw; 
+}
+.txt {
+  font-size: 1.8vw;
+  
+}
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to { 
+    transform: rotateY(360deg);
+  }
+}
+#neb {
+  position:absolute;
+  top: -100%
+}
+.bigNeb {
+  width: 100vw;
+  height: 100vw; 
+  position: fixed;
+    animation-name:            fade-inNeb; 
+    animation-duration:        2s; 
+    animation-timing-function: linear;
+}
+@keyframes fade-inNeb {
+  from {
+    top: -40%;
+    transform: rotate(0deg);
+    opacity: 0.3;
+    margin-left: 0vw;
+  }
+  to { 
+    top: 40%;
+    transform: rotate(1000deg);
+    opacity: 1;
+    
+  }
+}
+
+#fill {
+  margin: -10%;
+  z-index: 62;
+  padding: 100%;
+  background-color: rgba(1,1,1,0); 
+  border: none !important; 
+  /* position: absolute;  */
+  width:100%;
+  height:100%;
+  visibility: hidden;
+  position: fixed;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  top:0%;
+  left:0%;
+  /* padding:10vw; */
+}
+#popoverNeb {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  z-index: 64;
+  display: none;
+  
+  position: fixed;
+  padding: 2vw;
+  width: 75%;
+
+  /* top: 25%;
+  left: 25%; */
+  background-color: #e6e6e6;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.absImge {
+  margin: 0px;
+  padding: 0px;
+  width: 5vw;
+  height: 5vw;
+  float: left;
+  position: fixed;
+  z-index: 65;
+  animation: flyCoin linear 0.7s;
+  opacity: 0;
+}
+@keyframes flyCoin {
+  0% {
+    /* top: 10%; */
+    /* left: 0%; */
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    top: 1%;
+    left: 47%;
+  }
+}
+#theBigNeb {
+  z-index: 64;
+  padding: 1vw;
+  float: left;
+  border-radius: 100%;
+  width: 40%;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  
+}
+ 
+p {
+  margin-left: 43.5%;
+  font-size: 2.5vw;
+}
+@keyframes fadeInAnimation {
+  0% {
+    top: 10%;
+    left: 0%;
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    top: 10%;
+    left: 10%;
+  }
+} 
+#exit {
+  float: left;
+  margin-right: 1vw;
+}
+
+#shop {
+  z-index: 63;
+  visibility: hidden;
+  position: fixed;
+  padding: 1vw;
+  width: 85%;
+  max-height: 75%;
+  overflow-y: scroll;
+  
+
+  /* top: 25%;
+  left: 25%; */
+  background-color: #e6e6e6;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.shopItem {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 2%;
+  /* background: #f7f7f7; */
+  height: 10%;
+  width: 99%;
+  float: left;
+  padding: 0.5vw;
+  border-top: 0.3vw ridge;
+}
+.shopItem h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vw;
+  width: 20%;
+  float: left;
+  margin:0%;
+}
+.shopItem p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vw;
+  width: 65%;
+  float: left;
+  margin:0%;
+}
+.shopItem button {
+  font-family: 'Raleway', sans-serif;
+  width: 10%;
+  font-size: 2vw;
+  float: right;
+  height: 100%;
+  margin:0%;
+}
+
+
+.yeORne {
+/*   background-color: ;   */
+  border: 2vw ridge rgba(255, 255, 255, .6);
+  transition-duration: 0.5s;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vw;
+
+}
+.pressr {
+  font-size: 1.5vw;
+  margin-left: -1vw;
+  /* border-style: none; */
+  margin-top:20%;
+  /* margin-bottom:0%; */
+  /* background-image: url("img/button.jpg"); */
+  height: 10%;
+  /* background-position: center; /* Center the image */ 
+  /* background-repeat: no-repeat; /* Do not repeat the image */ 
+  /* background-size: cover; /* Resize the background image to cover the entire container */ 
+/*   background-repeat: no-repeat, repeat; */
+}
+/* .pressr:hover {} */
+
+@keyframes greenFlash{
+  from{background-color: rgb(0, 102, 0);}
+  to{background-color: lightgreen;}
+}
+.greenFlashr {
+  animation: greenFlash 0.2s linear 0s 1;
+}
+@keyframes yellowFlash{
+  from{background-color: yellow;}
+  to{background-color: lightyellow;}
+}
+.yellowFlashr {
+  animation: yellowFlash 0.2s linear 0s 1;
+}
+@keyframes redFlash{
+  from{background-color: #e14c4c;}
+  to{background-color: #f78787;}
+}
+.redFlashr {
+  animation: redFlash 0.2s linear 0s 1;
+}
+.displ {
+  transition-duration: 0.02s;
+  float: right;
+}
+@keyframes textFlash {
+  0% {
+    
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.txtFlashr {
+  transition-duration: 0.1s;
+  animation: txtFlash 0.6s linear 0s 1;
+}
+
+#loadAndSyncroniseGIF {
+  position: static;
+  margin-top: 256vh;
+}
+
+ /* Filter styles stolen from w3docs */
+/* How to Change the Color of PNG Image With CSS */
+      .saturate {
+        filter: saturate(3);
+        -webkit-filter: saturate(3);
+      }
+      .grayscale {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+      }
+      .contrast {
+        filter: contrast(160%);
+        -webkit-filter: contrast(160%);
+      }
+      .brightness {
+        filter: brightness(0.25);
+        -webkit-filter: brightness(0.25);
+      }
+      .blur {
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+      }
+      .invert {
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+      }
+      .sepia {
+        filter: sepia(100%);
+        -webkit-filter: sepia(100%);
+      }
+      .huerotate {
+        filter: hue-rotate(180deg);
+        -webkit-filter: hue-rotate(180deg);
+      }
+      .opacity {
+        filter: opacity(50%);
+        -webkit-filter: opacity(50%);
+      }
+
+
+.fadeOut {
+  animation: fadeOut ease 1s;
+  opacity: 0;
+}
+@keyframes fadeOut {
+  0% {
+    /* top: 10%; */
+    /* left: 0%; */
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    /* top: 1%; */
+    /* left: 47%; */
+  }
+}
