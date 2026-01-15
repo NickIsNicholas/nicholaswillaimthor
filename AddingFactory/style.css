@@ -1,0 +1,118 @@
+#UI {
+  font-family: "Lucida", Cursive;
+  color: rgba(1,1,1,0.8);
+  font-size: 3.5vw;
+}
+
+#InfoBox {
+  margin-top:25%;
+  margin-left: 45%;
+  width: 49%;
+  text-align: right;
+/*   position:fixed; */
+}
+#HardEasy {
+  font-family: "Lucida", Cursive;
+  font-size: 3vw;
+  border-color: rgba(255,255,255,1);
+  background-color: rgba(173,216,230,0.5);
+/*   border-width: 0.3vw; */
+/*   border-radius: 0.5vw; */
+  margin-top: 0%;
+  margin-left: 45%;
+  boarderWidth:0.5vw;
+  position: absolute;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.4);
+} 
+#instruct {
+  top: 38vw;
+  position: absolute;
+  font-family: "Lucida", Cursive;
+  font-size: 2vw;
+  text-align: right;
+  right: 7.5%;
+  width: 44%;
+  position: absolute;
+  
+}
+#countr {
+  font-family: "Lucida", Cursive;
+  font-size: 0vw;
+  background-color: rgba(173,216,230,0);
+  border-style: none;
+  position: absolute;
+  transition-duration: 0.2s;
+}
+#count2 {
+  font-family: "Lucida", Cursive;
+  font-size: 0vw;
+  background-color: rgba(173,216,230,0);
+  border-style: none;
+  position: absolute;
+  transition-duration: 0.2s;
+}
+
+#Text {
+  position:fixed;
+  text-align: right;
+  position: absolute;
+  right: 3vw;
+  top: 0.5vw;
+  font-size: 3.5vw;
+  background-color: rgba(1,1,1,0);
+  border-color: rgba(1,1,1,0.5);
+  border-width: 0.3vw;
+  border-radius: 0.5vw;
+  font-family: "Lucida", Cursive;
+  color: rgba(1,1,1,0.8);
+}
+#Run {
+  background-color: rgba(173,216,230,0.5);
+  border-color: rgba(1,1,1,0.4);
+  border-width: 0.3vw;
+  border-radius: 0.5vw;
+  font-family: "Lucida Handwriting", Cursive;
+  color: rgba(1,1,1,0.8);
+  font-size: 3vw;
+}
+
+#xy {
+  background-color: rgba(173,216,230,0.5);
+  border-color: rgba(1,1,1,0.4);
+  border-width: 0.3vw;
+  border-radius: 0.5vw;
+  font-family: "Lucida Handwriting", Cursive;
+  color: rgba(1,1,1,0.8);
+  font-size: 3vw;
+}
+.info {
+  font-family: "Lucida", Cursive;
+  font-size: 2vw;
+}
+.MainDiv {
+  height: 50vw;
+  width: 10vw;
+}
+.ObjClass {
+  border-color: rgba(255,255,255,1);
+  background-color: rgba(173,216,230,0.5);
+  position:fixed;
+  width:8vw;
+  height:8vw;
+  boarderWidth:0.3vw;
+/*   border-style: none; */
+  transition-duration: 0.7s;
+  font-size: 2vw;
+}
+#player {
+  border-color: rgba(255,255,255,1);
+  background-color: rgba(173,216,230,0.5);
+  position:fixed;
+  width:8.9vw;
+  height:8.9vw;
+  boarderWidth:0.5vw;
+/*   border-style: none; */
+  transition-duration: 0.25s;
+/*   font-size: 2vw; */
+}
