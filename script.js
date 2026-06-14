@@ -386,30 +386,30 @@ function handleTouchMove(evt) {
 // }
 // demonCoreImgCycle ()
 
-function secondImgCycle (sNum, v1, v2, v3, v4, v5) {
-  console.log(sNum+", "+v1+", "+v2+", "+v3+", "+v4+", "+v5)
-  console.log("curent: "+curent+", getMainIDNumber: "+getMainIDNumber(v1, v2))
-  let sNumber = getMainIDNumber(""+v1, ""+v2)
-  if (curent == sNumber || curent == sNumber - 1 && $(""+v4).is(":hover") == false) {
-    // console.log("dNum: "+ dNum)
-    let elementNum = v5+sNum
-    let $element =  $(""+elementNum)
-    console.log("elementNum: "+elementNum)
-    sNum++
-    if (sNum >= 9) sNum = 0
-    // Animate the scrolling of the <html> and <body> elements
-    $(""+v4).animate({
-     scrollTop: $(""+v4).scrollTop() + ($element.offset().top - $(""+v4).offset().top)
-      // scrollTop:   element.offset()
-    }, 300);
-  }
-  setTimeout(() => {
-    secondImgCycle (sNum, v1, v2, v3, v4, v5)
-  }, 2500)
+// function secondImgCycle (sNum, v1, v2, v3, v4, v5) {
+//   console.log(sNum+", "+v1+", "+v2+", "+v3+", "+v4+", "+v5)
+//   console.log("curent: "+curent+", getMainIDNumber: "+getMainIDNumber(v1, v2))
+//   let sNumber = getMainIDNumber(""+v1, ""+v2)
+//   if (curent == sNumber || curent == sNumber - 1 && $(""+v4).is(":hover") == false) {
+//     // console.log("dNum: "+ dNum)
+//     let elementNum = v5+sNum
+//     let $element =  $(""+elementNum)
+//     console.log("elementNum: "+elementNum)
+//     sNum++
+//     if (sNum >= 9) sNum = 0
+//     // Animate the scrolling of the <html> and <body> elements
+//     $(""+v4).animate({
+//      scrollTop: $(""+v4).scrollTop() + ($element.offset().top - $(""+v4).offset().top)
+//       // scrollTop:   element.offset()
+//     }, 300);
+//   }
+//   setTimeout(() => {
+//     secondImgCycle (sNum, v1, v2, v3, v4, v5)
+//   }, 2500)
 
-}
-secondImgCycle (0, "secondImgMain", ".main", '#sContainer', '#img-sContainer', "#img-S")
-secondImgCycle (0, "demonCoreMain", ".main", '#dContainer', '#img-dContainer', "#img-d")
+// }
+// secondImgCycle (0, "secondImgMain", ".main", '#sContainer', '#img-sContainer', "#img-S")
+// secondImgCycle (0, "demonCoreMain", ".main", '#dContainer', '#img-dContainer', "#img-d")
 
 function getMainIDNumber(stopElementID, targetCLassOrID) {
     let count = 0;

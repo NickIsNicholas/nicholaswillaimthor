@@ -13,13 +13,19 @@ html {
 } */
 
 .essay {
-  width: 76%; 
+  width: 80%; 
   height: 6%; 
-  transition-duration: 500ms;
+  transition-duration: 400ms;
   
 }
 .essay:hover {
   height: 60%; 
+}
+.essaybig {
+  width: 80%; 
+  height: 95%; 
+  transition-duration: 400ms;
+  
 }
 
 .main {
@@ -372,15 +378,18 @@ div.scroll-container ::-webkit-scrollbar {
   overflow-y: hidden;
   white-space: nowrap; */
   /* verticle greater */
-  
-  overflow-x:hidden;
-  overflow-y: scroll;
+
   position: relative;
+  display: flex;               /* Arrange children in a row */
+  overflow-x: auto;           /* Enable horizontal scrolling */
+  flex-wrap: nowrap;          /* Prevent wrapping of items */
+  
 }
 .sliderH img{
   width:100%;
   height: auto;
   position: relative;
+  margin: 1vh;
 }
 .sliderH button{
   width:100%;
@@ -445,6 +454,16 @@ div.scroll-container ::-webkit-scrollbar {
   margin: 1em auto;
   outline: 2px cornflowerblue;
   margin-left: 10%;
+}
+::-webkit-scrollbar:verticle{
+  display: block;
+  height: 9em;
+  overflow: auto;
+  width: 2em;
+  padding: 1em;
+  margin: 1em auto;
+  outline: 2px cornflowerblue;
+  margin-bottom: 10%;
 }
 ::-webkit-scrollbar{
   display: block;
